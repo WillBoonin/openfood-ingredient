@@ -1,8 +1,3 @@
-#!/usr/bin/env bash
-# Usage: ./find_ingredient.sh -i "<ingredient>" -d /path/to/folder
-# Input: products.csv (TSV) must exist inside the folder.
-# Output: product_name<TAB>code for matches, then a final count line.
-
 set -euo pipefail
 # Allow up to ~1 GB per field (Open Food Facts can have huge text fields)
 export CSVKIT_FIELD_SIZE_LIMIT=$((1024 * 1024 * 1024))
