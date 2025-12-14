@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -euo pipefail # safer Bash: fail on errors/unset vars/pipelines
 # Allow up to 1 GB per field
 export CSVKIT_FIELD_SIZE_LIMIT=$((1024 * 1024 * 1024))
